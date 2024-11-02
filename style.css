@@ -1,0 +1,89 @@
+/* Define la fuente Kalnia Glaze */
+@font-face {
+    font-family: 'Kalnia Glaze';
+    src: url('resource/fonts/Kalnia_Glaze/KalniaGlaze-VariableFont_wdth\,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Define la fuente Shrikhand */
+@font-face {
+    font-family: 'Shrikhand';
+    src: url('resource/fonts/Shrikhand/Shrikhand-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Define la fuente Elsie_Swash_Caps */
+@font-face {
+    font-family: 'Elsie_Swash_Caps';
+    src: url('resource/fonts/Elsie_Swash_Caps/ElsieSwashCaps-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Fondo de la página y estilo general */
+body {
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco por defecto */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Configuración del contenedor de partículas */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Asegura que las partículas estén debajo del contenedor de texto */
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2)); /* Sombra leve */
+}
+
+/* Configuración del contenedor principal */
+#container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    z-index: 3; /* Asegura que el contenedor de texto esté encima de las partículas */
+    color: #ffffff; /* Asegura que el texto sea blanco */
+}
+
+/* Recuadro redondeado y semitransparente para el texto */
+#text-container {
+    background-color: rgba(70, 62, 62, 0.9); /* Fondo negro semitransparente */
+    padding: 20px 40px;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 1); /* Sombra para el recuadro */
+    z-index: 2; /* Asegura que el fondo del texto esté sobre las partículas */
+}
+
+/* Estilo del texto */
+h1 {
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 4em;
+    line-height: 0.9em; /* Reduce el espacio entre líneas */
+    color: #ff00aa; /* Color del texto del título */
+}
+
+p {
+    font-family: 'Shrikhand', sans-serif;
+    line-height: 0.9em; /* Reduce el espacio entre líneas */
+    font-size: 3em;
+    color: #8c8cff; /* Color del texto del párrafo */
+}
+
+/* Estilo del contenedor de firma */
+#firma {
+    font-family: 'Elsie_Swash_Caps', sans-serif;
+    font-size: 1.2em;
+    color: #e8e7e7; /* Color rosado claro para la firma */
+    margin-top: 10px;
+    opacity: 0.8; /* Ligera transparencia para un efecto más sutil */
+    text-align: right; /* Alineación a la derecha dentro del contenedor */
+}
